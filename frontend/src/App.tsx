@@ -8,7 +8,7 @@ function App() {
     const [count, setCount] = useState(0)
 
     function fetchTodos() {
-        axios.get('http://localhost:8080/api/todo').then((response) => {
+        axios.get('/api/todo').then((response) => {
             console.log(response.data);
         })
             .catch((error) => {
